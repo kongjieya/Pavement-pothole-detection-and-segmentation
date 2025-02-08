@@ -229,13 +229,13 @@ elif st.session_state.page == 'function_selection':
             image_path = "temp_image.jpg"
             image.save(image_path)  # 保存上传的图片到临时文件
 
-             # 调用 predict_seg.py 进行检测
-            command = f"python predict_seg.py --model {selected_model} --image {image_path}"
-            subprocess.run(command, shell=True)
+            #  # 调用 predict_seg.py 进行检测
+            # command = f"python predict_seg.py --model {selected_model} --image {image_path}"
+            # subprocess.run(command, shell=True)
 
-            # 读取 predict_seg.py 保存的结果图片
-            original_image = cv2.imread(image_path)
-            segmented_image = cv2.imread('save/segmented_image.jpg')
+            # # 读取 predict_seg.py 保存的结果图片
+            # original_image = cv2.imread(image_path)
+            # segmented_image = cv2.imread('save/segmented_image.jpg')
 
             # 调用 seg_mask.py 进行检测
             command = f"python seg_mask.py --model {selected_model} --image {image_path}"
@@ -243,7 +243,7 @@ elif st.session_state.page == 'function_selection':
 
             # 读取 seg_mask.py 保存的结果图片
             original_image = cv2.imread(image_path)
-            segmented_image = cv2.imread('save/segmented_images.jpg')
+            # segmented_image = cv2.imread('save/segmented_images.jpg')
 
            
 
@@ -253,6 +253,7 @@ elif st.session_state.page == 'function_selection':
             results = model.predict(original_image)
             mask_combined = np.zeros_like(original_image, dtype=np.uint8)
             for result in results:
+                predicted_image = result.plot()
                 for mask in result.masks.data:
                     mask = mask.cpu().numpy()
                     mask_3channel = np.stack((mask,) * 3, axis=-1) * 255
@@ -260,12 +261,15 @@ elif st.session_state.page == 'function_selection':
                     mask_combined = cv2.add(mask_combined, mask_3channel)
             mask_rgb = cv2.cvtColor(mask_combined, cv2.COLOR_BGR2RGB)
 
+            segmented_image = original_image.copy()
+            segmented_image[mask_combined[:, :, 2] != 0] = [255, 0, 0]
+
             # 将 BGR 转换为 RGB 以便 streamlit 显示
             original_image_rgb = cv2.cvtColor(original_image, cv2.COLOR_BGR2RGB)
             segmented_image_rgb = cv2.cvtColor(segmented_image, cv2.COLOR_BGR2RGB)
 
             # 读取预测图片
-            predicted_image = cv2.imread('save/segmented_image.jpg')
+            # predicted_image = cv2.imread('save/segmented_image.jpg')
             predicted_image_rgb = cv2.cvtColor(predicted_image, cv2.COLOR_BGR2RGB)
 
             # 显示原图、mask 和分割后的图像和预测图片

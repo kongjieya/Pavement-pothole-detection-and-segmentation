@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>personForm</class>
+ <widget class="QWidget" name="personForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>171</width>
+    <height>221</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;
+
+</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_userform_userinfo">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover
+{
+	border:0px;
+	background:rgb(246,246,247);
+
+}
+QPushButton{
+	background-color: rgb(255, 255, 255);
+	font:10px;
+	border: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string> 个人中心</string>
+   </property>
+   <property name="icon">
+    <iconset resource="user_info.qrc">
+     <normaloff>:/img/img/用户设置.png</normaloff>:/img/img/用户设置.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>14</width>
+     <height>14</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_userform_AIFirstAid">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover
+{
+	border:0px;
+	background:rgb(246,246,247);
+
+}
+QPushButton{
+	background-color: rgb(255, 255, 255);
+	font:10px;
+	border: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string> AI 客服 </string>
+   </property>
+   <property name="icon">
+    <iconset resource="user_info.qrc">
+     <normaloff>:/img/img/客服.png</normaloff>:/img/img/客服.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>14</width>
+     <height>14</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_userform_Feedback">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>140</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover
+{
+	border:0px;
+	background:rgb(246,246,247);
+
+}
+QPushButton{
+	background-color: rgb(255, 255, 255);
+	font:10px;
+	border: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string> 意见反馈</string>
+   </property>
+   <property name="icon">
+    <iconset resource="user_info.qrc">
+     <normaloff>:/img/img/编辑3.png</normaloff>:/img/img/编辑3.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>14</width>
+     <height>14</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_userform_logout">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>180</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover
+{
+	border:0px;
+	background:rgb(246,246,247);
+
+}
+QPushButton{
+	background-color: rgb(255, 255, 255);
+	font:10px;
+	border: 0px;
+}</string>
+   </property>
+   <property name="text">
+    <string> 退出登录</string>
+   </property>
+   <property name="icon">
+    <iconset resource="user_info.qrc">
+     <normaloff>:/img/img/退出3.png</normaloff>:/img/img/退出3.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>14</width>
+     <height>14</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_line1">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>60</y>
+     <width>221</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+QLabel#label_line1
+{
+	border:1px solid rgb(238,238,238); 
+	border-color: rgb(238, 238, 238);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_line1_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>180</y>
+     <width>221</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	border:1px solid rgb(238,238,238); 
+	border-color: rgb(238, 238, 238);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>171</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_userform_name">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font-size:12px</string>
+    </property>
+    <property name="text">
+     <string>未知</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="user_info.qrc"/>
+ </resources>
+ <connections/>
+</ui>

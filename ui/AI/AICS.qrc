@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="img">
+    <file>img/up-b-向上.png</file>
+  </qresource>
+</RCC>

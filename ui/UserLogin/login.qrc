@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="login_icon">
+    <file>img/头像加号.png</file>
+    <file>img/昵称.png</file>
+    <file>img/kk.jpg</file>
+    <file>img/back.png</file>
+    <file>img/close.png</file>
+    <file>img/min.png</file>
+    <file>img/登录.png</file>
+    <file>img/密码.png</file>
+    <file>img/手机.png</file>
+  </qresource>
+</RCC>

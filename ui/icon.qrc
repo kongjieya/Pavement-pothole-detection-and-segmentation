@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="img">
+    <file>img/退出.png</file>
+    <file>img/个人中心.png</file>
+    <file>img/首页.png</file>
+    <file>img/YOLO.png</file>
+    <file>img/展开.png</file>
+    <file>img/加号.png</file>
+    <file>img/kk.jpg</file>
+    <file>img/还原.png</file>
+    <file>img/最小化.png</file>
+    <file>img/最大化.png</file>
+    <file>img/关闭.png</file>
+    <file>img/暂停.png</file>
+    <file>img/文件.png</file>
+    <file>img/结束.png</file>
+    <file>img/摄像头.png</file>
+    <file>img/运行.png</file>
+  </qresource>
+</RCC>

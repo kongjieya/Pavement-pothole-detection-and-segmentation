@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="img">
+    <file>img/编辑3.png</file>
+    <file>img/客服.png</file>
+    <file>img/退出3.png</file>
+    <file>img/用户设置.png</file>
+  </qresource>
+</RCC>
